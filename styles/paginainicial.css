@@ -99,6 +99,8 @@ footer {
         align-items: center;
         justify-content: center;
         margin: 0;
+        opacity: 0.5;
+        transition: 1s;
 
     }
 
