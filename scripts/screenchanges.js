@@ -7,17 +7,19 @@ function abrirMenu() {
     menu.style.right = (menu.offsetWidth * -1) + 'px'
     openMenu.style.display = 'none'
 
-    menu.style.opacity = '1' 
-    menu.style.right = '0'
-
+    setTimeout(() => {
+        menu.style.opacity = '1' 
+        menu.style.right = '0'
+    }, 10)
 }
 
 function fecharMenu() {
     menu.style.opacity = '0'
     menu.style.right = (menu.offsetWidth * -1) + 'px'
 
-    menu.removeAttribute('style')
-    openMenu.removeAttribute('style')
-    
+    setTimeout(() => {
+        menu.removeAttribute('style')
+        openMenu.removeAttribute('style')
+    }, 200) 
 }
 
