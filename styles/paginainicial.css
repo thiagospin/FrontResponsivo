@@ -76,17 +76,15 @@ footer {
 /* verificar largura e altura da janela */
 @media only screen and (max-width: 899px) {
 
-    #openMenu, #closeMenu {
-        display: block;
-    }
-
     #closeMenu {
+        display: block;
         position: fixed;
         right: 15px;
         top: 15px
     }
 
     #openMenu {
+        display: block;
         margin-left: auto;
     }
 
@@ -99,7 +97,7 @@ footer {
         align-items: center;
         justify-content: center;
         margin: 0;
-        opacity: 0.5;
+        opacity: 0.0;
         transition: 1s;
 
     }
