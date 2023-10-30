@@ -33,8 +33,7 @@ header #logo {
 nav {
     flex: 1 1 100vw;
     align-items: center;
-    justify-content: flex-end;
-    /* background-color: blue; */                     
+    justify-content: flex-end;                     
 }
 
 nav a {
@@ -59,7 +58,7 @@ a {
 
 main {
     flex: 20 1 700px;                     
-    height: calc(100vh - 300px);
+    height: calc(100vh - 200px);
 }
 
 aside {
@@ -81,7 +80,15 @@ footer {
         display: block;
     }
 
-    #closeMenu
+    #closeMenu {
+        position: fixed;
+        right: 15px;
+        top: 15px
+    }
+
+    #openMenu {
+        margin-left: auto;
+    }
 
     nav {
         position: fixed;
@@ -92,10 +99,11 @@ footer {
         align-items: center;
         justify-content: center;
         margin: 0;
+
     }
 
     main {
-        height: calc(100vh - 400px);
+        height: calc(100vh - 300px);
     }
 
     aside {
