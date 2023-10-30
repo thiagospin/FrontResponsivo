@@ -25,10 +25,36 @@ header {
     background-color:darkgray;
 }
 
+header #logo {
+    flex: 0 1 200px;
+    background-color:chocolate;
+}
+
 nav {
     flex: 1 1 100vw;
-    height: 70px;  
-    background-color: blue;                     
+    align-items: center;
+    justify-content: flex-end;
+    /* background-color: blue; */                     
+}
+
+nav a {
+    margin: 3%;
+    font-size: 20pt;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#openMenu, #closeMenu {
+    border: none;
+    background: none;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0px 5px 0px 5px;
+    cursor: pointer;
+    display: none;
 }
 
 main {
@@ -50,24 +76,34 @@ footer {
 
 /* verificar largura e altura da janela */
 @media only screen and (max-width: 899px) {
-   header {
 
-   }
-   nav {
+    #openMenu, #closeMenu {
+        display: block;
+    }
 
-   }
-   main {
+    #closeMenu
 
-   }
-   aside {
-    /* passará a ocupar 100% da largura e altura fixada */
-    flex: 1 1 100vw;
-    height: 100px;
+    nav {
+        position: fixed;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.8);
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
 
-   }
-   footer {
-     
-   } 
+    main {
+        height: calc(100vh - 400px);
+    }
+
+    aside {
+        /* passará a ocupar 100% da largura e altura fixada */
+        flex: 1 1 100vw;
+        height: 100px;
+    }
+
 }
 
 
