@@ -57,18 +57,15 @@ a {
     align-items: center;
     justify-content: center;
     margin: 2%;
-    
 }
 
 #redes a {
     margin: 3%;
 }
 
-
 .iconmenu {
     width: 20px;    
 }
-
 
 #openMenu, #closeMenu {
     border: none;
@@ -149,7 +146,3 @@ footer {
     }
 
 }
-
-
-
-
